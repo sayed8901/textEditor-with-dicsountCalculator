@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Editor</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/8bae764387.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="w-3/4 mx-auto bg-sky-200 py-4 px-12 mt-12 rounded-xl">
+        <h1 class="text-5xl text-center my-4 pb-4">My Text Editor</h1>
+        <div class="bg-sky-400 rounded-lg mb-4">
+            <div class="flex justify-between">
+                <div class="flex flex-row gap-10 px-12 py-4">
+                    <button onclick="textBold()"><i class="fa-solid fa-bold"></i></button>
+                    <button onclick="textItalic()"><i class="fa-solid fa-italic"></i></button>
+                    <button onclick="textUnderline()"><i class="fa-solid fa-underline"></i></button>
+                </div>
+                <div class="flex flex-row gap-10 px-12 py-4">
+                    <button onclick="textLeft()"><i class="fa-solid fa-align-left"></i></button>
+                    <button onclick="textRight()"><i class="fa-solid fa-align-right"></i></button>
+                    <button onclick="textCenter()"><i class="fa-solid fa-align-center"></i></button>
+                    <button onclick="textJustify()"><i class="fa-solid fa-align-justify"></i></button>
+                </div>
+            </div>
+            <hr>
+            <textarea class="bg-white w-11/12 m-8 rounded-md p-8" style="min-height: 220px;" name="" id="text" placeholder="Lets type some text here to see the output."></textarea>
+        </div>
+        <div class="grid grid-cols-2">
+            <div></div>
+            <button id="btn-submit" class="bg-sky-600 hover:bg-sky-700 py-3 px-8 my-4 rounded-lg text-white text-3xl">Click here to <span class="text-orange-400 font-semibold">buy now</span>!!</button>
+        </div>
+    </div>
+
+    <script src="text-editor.js"></script>
+</body>
+</html>

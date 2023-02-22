@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discount</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <h1 class="text-5xl text-center my-8">Valentine's Day <span class="font-bold text-rose-500">Discount</span> Offer</h1>
+
+    <div class="w-3/4 bg-slate-300 rounded-2xl mx-auto px-12 py-6 text-4xl font-semibold">
+        <div class="grid grid-cols-2 gap-4 mb-6">
+            <p class="py-4">Price:</p>
+            <input class="rounded-lg text-center py-4" type="text" name="" id="price" value="1000">
+        </div>
+        <hr>
+        <p class="text-xl mt-8 text-center">You can get awesome discount by using a coupon (DISC30).</p>
+        <div class="grid grid-cols-2 gap-4 my-6">
+            <p class="py-4 text-indigo-700">Coupon Code:</p>
+            <div class="grid grid-cols-2 gap-4">
+                <input class="rounded-lg text-center py-4" type="text" name="" id="coupon" value="">
+                <button id="btn-submit" class="bg-orange-600 hover:bg-sky-700 py-3 rounded-lg text-white font-medium">Apply</button>
+            </div>
+        </div>
+        <div class="grid grid-cols-2 gap-4 my-6">
+            <p class="py-4">Discount:</p>
+            <input class="rounded-lg text-center text-purple-700 font-bold" type="text" name="" id="discount" value="0">
+        </div>
+        <hr>
+        <div class="grid grid-cols-2 mt-6">
+            <p class="py-4">Please Pay:</p>
+            <input class="rounded-lg text-center py-4 text-amber-600 font-extrabold" type="text" name="" id="payment" value="0">
+        </div>
+    </div>
+
+    <script src="disc.js"></script>
+</body>
+</html>
